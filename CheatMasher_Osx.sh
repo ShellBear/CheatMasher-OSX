@@ -1,4 +1,5 @@
 #!/bin/bash
+#Created by ShellBear  --  https://github.com/ShellBear
 script_dir=$(dirname $0)
 clear
 echo ""
