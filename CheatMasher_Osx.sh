@@ -20,38 +20,38 @@ echo ""
 echo "Analysing Downloads : "
 echo ""
 #Looking for commons cheats in Downloads directory
-find Downloads -name huzuni
-find Downloads -name minecraft
-find Downloads -name client
-find Downloads -name nodus
-find Downloads -name iridium
-find Downloads -name metro
-find Downloads -name ghost
-find Downloads -name ghostclient
-find Downloads -name wurst
-find Downloads -name wolfram
-find Downloads -name forcefield
-find Downloads -name Dauntless
-find Downloads -name huzuni > $script_dir/CheatMasher_Scan.txt
-find Downloads -name minecraft >> $script_dir/CheatMasher_Scan.txt
-find Downloads -name client >> $script_dir/CheatMasher_Scan.txt
-find Downloads -name nodus >> $script_dir/CheatMasher_Scan.txt
-find Downloads -name iridium >> $script_dir/CheatMasher_Scan.txt
-find Downloads -name metro >> $script_dir/CheatMasher_Scan.txt
-find Downloads -name ghost >> $script_dir/CheatMasher_Scan.txt
-find Downloads -name ghostclient >> $script_dir/CheatMasher_Scan.txt
-find Downloads -name wurst >> $script_dir/CheatMasher_Scan.txt
-find Downloads -name wolfram >> $script_dir/CheatMasher_Scan.txt
-find Downloads -name forcefield >> $script_dir/CheatMasher_Scan.txt
-find Downloads -name Dauntless >> $script_dir/CheatMasher_Scan.txt
+find /users/$(whoami)/Downloads -name huzuni
+find /users/$(whoami)/Downloads minecraft
+find /users/$(whoami)/Downloads client
+find /users/$(whoami)/Downloads nodus
+find /users/$(whoami)/Downloads iridium
+find /users/$(whoami)/Downloads metro
+find /users/$(whoami)/Downloads ghost
+find /users/$(whoami)/Downloads ghostclient
+find /users/$(whoami)/Downloads wurst
+find /users/$(whoami)/Downloads wolfram
+find /users/$(whoami)/Downloads forcefield
+find /users/$(whoami)/Downloads Dauntless
+find /users/$(whoami)/Downloads huzuni > $script_dir/CheatMasher_Scan.txt
+find /users/$(whoami)/Downloads minecraft >> $script_dir/CheatMasher_Scan.txt
+find /users/$(whoami)/Downloads client >> $script_dir/CheatMasher_Scan.txt
+find /users/$(whoami)/Downloads nodus >> $script_dir/CheatMasher_Scan.txt
+find /users/$(whoami)/Downloads iridium >> $script_dir/CheatMasher_Scan.txt
+find /users/$(whoami)/Downloads metro >> $script_dir/CheatMasher_Scan.txt
+find /users/$(whoami)/Downloads >> $script_dir/CheatMasher_Scan.txt
+find /users/$(whoami)/Downloads ghostclient >> $script_dir/CheatMasher_Scan.txt
+find /users/$(whoami)/Downloads wurst >> $script_dir/CheatMasher_Scan.txt
+find /users/$(whoami)/Downloads wolfram >> $script_dir/CheatMasher_Scan.txt
+find /users/$(whoami)/Downloads forcefield >> $script_dir/CheatMasher_Scan.txt
+find /users/$(whoami)/Downloads Dauntless >> $script_dir/CheatMasher_Scan.txt
 echo ""
 echo ""
 echo "Search '.jar' files : "
 echo ""
 #Looking for .jar files in Downloads directory and everywhere using tags
-find Downloads -iname "*.jar" 
+find /users/$(whoami)/Downloads -iname "*.jar" 
 mdfind 'kMDItemFSName=*.jar' | egrep -w 'huzuni|forcefield|client|hacked|hack|jam|metro|wolfram|wurst|ghostclient|ghost|nodus|iridium|Dauntless'
-find Downloads -iname "*.jar"  > $script_dir/CheatMasher_Scan.txt
+find /users/$(whoami)/Downloads -iname "*.jar"  > $script_dir/CheatMasher_Scan.txt
 mdfind 'kMDItemFSName=*.jar' | egrep -w 'huzuni|forcefield|client|hacked|hack|jam|metro|wolfram|wurst|ghostclient|ghost|nodus|iridium|Dauntless' >> $script_dir/CheatMasher_Scan.txt
 echo ""
 echo ""
