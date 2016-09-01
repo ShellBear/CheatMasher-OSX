@@ -21,29 +21,29 @@ echo "Analysing Downloads : "
 echo ""
 #Looking for commons cheats in Downloads directory
 find /users/$(whoami)/Downloads -name huzuni
-find /users/$(whoami)/Downloads minecraft
-find /users/$(whoami)/Downloads client
-find /users/$(whoami)/Downloads nodus
-find /users/$(whoami)/Downloads iridium
-find /users/$(whoami)/Downloads metro
-find /users/$(whoami)/Downloads ghost
-find /users/$(whoami)/Downloads ghostclient
-find /users/$(whoami)/Downloads wurst
-find /users/$(whoami)/Downloads wolfram
-find /users/$(whoami)/Downloads forcefield
-find /users/$(whoami)/Downloads Dauntless
-find /users/$(whoami)/Downloads huzuni > $script_dir/CheatMasher_Scan.txt
-find /users/$(whoami)/Downloads minecraft >> $script_dir/CheatMasher_Scan.txt
-find /users/$(whoami)/Downloads client >> $script_dir/CheatMasher_Scan.txt
-find /users/$(whoami)/Downloads nodus >> $script_dir/CheatMasher_Scan.txt
-find /users/$(whoami)/Downloads iridium >> $script_dir/CheatMasher_Scan.txt
-find /users/$(whoami)/Downloads metro >> $script_dir/CheatMasher_Scan.txt
-find /users/$(whoami)/Downloads >> $script_dir/CheatMasher_Scan.txt
-find /users/$(whoami)/Downloads ghostclient >> $script_dir/CheatMasher_Scan.txt
-find /users/$(whoami)/Downloads wurst >> $script_dir/CheatMasher_Scan.txt
-find /users/$(whoami)/Downloads wolfram >> $script_dir/CheatMasher_Scan.txt
-find /users/$(whoami)/Downloads forcefield >> $script_dir/CheatMasher_Scan.txt
-find /users/$(whoami)/Downloads Dauntless >> $script_dir/CheatMasher_Scan.txt
+find /users/$(whoami)/Downloads -name minecraft
+find /users/$(whoami)/Downloads -name client
+find /users/$(whoami)/Downloads -name nodus
+find /users/$(whoami)/Downloads -name iridium
+find /users/$(whoami)/Downloads -name metro
+find /users/$(whoami)/Downloads -name ghost
+find /users/$(whoami)/Downloads -name ghostclient
+find /users/$(whoami)/Downloads -name wurst
+find /users/$(whoami)/Downloads -name wolfram
+find /users/$(whoami)/Downloads -name forcefield
+find /users/$(whoami)/Downloads -name Dauntless
+find /users/$(whoami)/Downloads -name huzuni > $script_dir/CheatMasher_Scan.txt
+find /users/$(whoami)/Downloads -name minecraft >> $script_dir/CheatMasher_Scan.txt
+find /users/$(whoami)/Downloads -name client >> $script_dir/CheatMasher_Scan.txt
+find /users/$(whoami)/Downloads -name nodus >> $script_dir/CheatMasher_Scan.txt
+find /users/$(whoami)/Downloads -name iridium >> $script_dir/CheatMasher_Scan.txt
+find /users/$(whoami)/Downloads -name metro >> $script_dir/CheatMasher_Scan.txt
+find /users/$(whoami)/Downloads -name ghost>> $script_dir/CheatMasher_Scan.txt
+find /users/$(whoami)/Downloads -name ghostclient >> $script_dir/CheatMasher_Scan.txt
+find /users/$(whoami)/Downloads -name wurst >> $script_dir/CheatMasher_Scan.txt
+find /users/$(whoami)/Downloads -name wolfram >> $script_dir/CheatMasher_Scan.txt
+find /users/$(whoami)/Downloads -name forcefield >> $script_dir/CheatMasher_Scan.txt
+find /users/$(whoami)/Downloads -name Dauntless >> $script_dir/CheatMasher_Scan.txt
 echo ""
 echo ""
 echo "Search '.jar' files : "
@@ -84,11 +84,11 @@ ls -1 *.txt ~/Library/Application\ Support/minecraft/*/ | egrep -w 'huzuni|force
 echo ""
 echo ""
 echo ""
-echo -e "\033[32m "
+echo "\033[32m "
 echo "Possible Cheats : "
 echo ""
 #Just show previous results
 egrep -w 'huzuni|forcefield|hacked|hack|jam|metro|wolfram|wurst|ghostclient|ghost|nodus|iridium|Dauntless' $script_dir/CheatMasher_Scan.txt
-echo -e "\033[0m"
+echo "\033[0m"
 echo ""
 echo ""
